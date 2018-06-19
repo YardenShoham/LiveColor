@@ -1,4 +1,3 @@
-
 int redPin = 11;
 int bluePin = 10;
 int greenPin = 9;
@@ -14,7 +13,7 @@ void setup()
 	digitalWrite(redPin, HIGH);
 	digitalWrite(greenPin, HIGH);
 	Serial.begin(9600);
-	Serial.setTimeout(1);
+	Serial.setTimeout(100);
 }
 
 void loop()

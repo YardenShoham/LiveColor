@@ -97,7 +97,7 @@ public class LiveColor extends JFrame implements ChangeListener
 		{
 			port.write(serialData.getBytes());
 		}
-		catch (IOException ex)
+		catch (Exception ex)
 		{
 			System.out.println(ex.getMessage());
 		}
@@ -110,7 +110,7 @@ public class LiveColor extends JFrame implements ChangeListener
 	{
 		try
 		{
-			CommPortIdentifier portId = CommPortIdentifier.getPortIdentifier("COM3"); // /dev/ttyUSB0
+			CommPortIdentifier portId = CommPortIdentifier.getPortIdentifier("COM3");
 			SerialPort serialPort = (SerialPort) portId.open("Live Color", 5000);
 			int baudRate = 9600;
 			serialPort.setSerialPortParams(baudRate, SerialPort.DATABITS_8, SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);
