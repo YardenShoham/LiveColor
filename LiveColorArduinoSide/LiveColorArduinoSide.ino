@@ -13,7 +13,7 @@ void setup()
 	digitalWrite(redPin, HIGH);
 	digitalWrite(greenPin, HIGH);
 	Serial.begin(9600);
-	Serial.setTimeout(100);
+	Serial.setTimeout(15);
 }
 
 void loop()
