@@ -96,7 +96,7 @@ public class LiveColor extends JFrame implements ChangeListener
 		try
 		{
 			port.write(serialData.getBytes());
-			Thread.sleep(150); // so the arduino wouuldn't receive so much data in such little time
+			Thread.sleep(150); // so the arduino wouldn't receive so much data in such little time
 		}
 		catch (Exception ex)
 		{
